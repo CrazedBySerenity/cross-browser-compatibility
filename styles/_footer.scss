@@ -1,0 +1,20 @@
+.footer {
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        margin-bottom: 47px;
+    }
+
+    &-header {
+        margin-right: auto;
+        max-width: 90px;
+        max-height: 20px;
+    }
+
+    &__logos {
+        margin-left: 95px;
+    }
+}
