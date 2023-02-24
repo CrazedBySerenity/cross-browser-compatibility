@@ -1,31 +1,108 @@
+@use 'fonts';
+
+.center-on-screen{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 3840px;
+}
+
 .page__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-width: 1110px;
+
+    margin-right: 125px;
+    margin-left: 125px;
 }
 
 .nav {
-    &__container {
+    width: 100%;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-header {
+        max-width: 90px;
+        max-height: 20px;
     }
 
     &-list {
-
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
     }
 
     &-link {
-        text-decoration: none;
+    text-decoration: none;
+    
+    font-family: fonts.$main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    letter-spacing: -0.35px;
+
+    color: fonts.$main-text-color;
+
+    margin-left: 29px;
     }
+}
+
+.title-card {
+    width: 100%;
+    align-self: first baseline;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+        max-width: 635px;
+        width: 100%;
+    }
+    &__text {
+    font-family: fonts.$main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+
+    color: fonts.$main-text-color;
+    }
+
+    &__header {
+    font-family: fonts.$main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+
+    letter-spacing: -0.4px;
+    }
+}
+
+.highlighted-text {
+    color: fonts.$highlighted-text-color;
+}
+
+.quote {
+    align-self: flex-end;
 }
 
 .gallery-grid__container {
     display: grid;
     grid-template-columns: 4;
     grid-template-rows: 32;
-
+    gap: 20px;
     width: 100%;
-    max-width: 1110px;
-    min-height: 1960px;
 
     &__img-1{
         grid-area: 1 / 1 / 8 / 2;
@@ -73,5 +150,70 @@
 
     &__img-12{
         grid-area: 27 / 3 / 32 / 4;
+    }
+}
+
+.offerings {
+    &__container {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__card-motto {
+        &__text {
+            max-width: 635px;
+
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            
+            color: fonts.$main-text-color;
+        }
+    }
+
+    &__card-services {
+        display: flex;
+
+
+        max-width: 350px;
+
+        &__list {
+            max-height: 106px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &__text {
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+
+            color: fonts.$main-text-color;
+
+            mix-blend-mode: normal;
+            opacity: 0.6;
+
+            margin-bottom: -10px;
+        }
+    }
+
+}
+
+.awards {
+    &__container {
+        width: 100%;
+        height: 500px;
+        border-top: solid 2px;
+        border-bottom: solid 2px;
+        border-color: #D8D8D8;
     }
 }
