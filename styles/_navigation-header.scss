@@ -1,0 +1,39 @@
+@use 'fonts';
+
+.nav {
+    margin-top: 61px;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-header {
+        max-width: 90px;
+        max-height: 20px;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    &-link {
+    text-decoration: none;
+    
+    font-family: fonts.$main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    letter-spacing: -0.35px;
+
+    color: fonts.$main-text-color;
+
+    margin-left: 29px;
+    }
+}
