@@ -4,3 +4,34 @@
 @use 'navigation-header';
 @use 'page-containers';
 
+
+
+.contact {
+    display: flex;
+}
+
+.contact__form {
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__input {
+        border: none;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #D8D8D8;
+
+        font-family: fonts.$main-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #111111;
+
+        mix-blend-mode: normal;
+        opacity: 0.6;
+    }
+}
