@@ -100,13 +100,51 @@ a {
   margin-left: 125px;
 }
 
+.center-on-screen {
+  height: 1375px;
+}
+
 .contact {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: last baseline;
+      align-content: last baseline;
+}
+.contact__header {
+  font-family: "Mullins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #111111;
+}
+.contact__header__container {
+  max-width: 475px;
+}
+.contact__header__text {
+  font-family: "Mullins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #111111;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }
 
+.contact__form {
+  max-width: 475px;
+  width: 100%;
+  height: auto;
+}
 .contact__form__container {
+  max-height: 291px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +152,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contact__form__input {
   border: none;
@@ -128,4 +169,16 @@ a {
   color: #111111;
   mix-blend-mode: normal;
   opacity: 0.6;
+}
+.contact__form__submit {
+  width: 125px;
+  height: 50px;
+  background: #4A4FF2;
+  font-family: "Mullins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
 }
